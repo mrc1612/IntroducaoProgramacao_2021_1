@@ -12,5 +12,7 @@ public class atividade2 {
 
         System.out.println("Valor do desconto: " + desconto);
         System.out.println("Produto com desconto: " + (valor - desconto));
+        
+        scanner.close();
     }
 }

@@ -12,5 +12,7 @@ public class atividade4 {
         double media = ((nota1 * 5.0) + (nota2 * 3.0) + (nota3 * 2.0))/10.0;
         
         System.out.println(media);
+
+        scanner.close();
     }
 }

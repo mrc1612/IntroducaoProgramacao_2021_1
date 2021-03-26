@@ -8,5 +8,7 @@ public class atividade6 {
         double peso = scanner.nextDouble();
 
         System.out.println("Valor do prato: R$ " + ((peso - 0.750) * 25));
+    
+        scanner.close();
     }
 }

@@ -10,6 +10,7 @@ public class atividade3 {
         double pagamento = scanner.nextDouble();
 
         System.out.println("litros de gasolina abastecidos: " + (pagamento/preco));
-        
+
+        scanner.close();
     }
 }

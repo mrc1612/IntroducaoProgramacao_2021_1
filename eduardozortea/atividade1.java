@@ -9,5 +9,7 @@ public class atividade1{
         float lado2 = scanner.nextFloat();
 
         System.out.println("Area do terreno: " + (lado1 * lado2));
+
+        scanner.close();
     }
 }
