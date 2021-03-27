@@ -10,5 +10,7 @@ public class atividade9 {
         double altura = scanner.nextDouble();
 
         System.out.println("volume: " + (3.14 * Math.pow(raio, 2) * altura));
+        
+        scanner.close();
     }
 }

@@ -10,5 +10,7 @@ public class atividade8 {
         double cotacaoDolarReal = 5.0;
 
         System.out.println("dolar em reais: " + (dolar*cotacaoDolarReal));
-    }
+        
+        scanner.close();
+    }   
 }
