@@ -1,4 +1,3 @@
-package uni3ex01;
 import java.util.*;
 
 public class Uni3Ex01 {
