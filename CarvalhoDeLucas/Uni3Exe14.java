@@ -29,7 +29,7 @@ public class Uni3Exe14 {
         double velocidadeMedia = distancia / tempo;
         double gasolinaGasta = distancia / 12;
 
-        System.out.println("Velocidade media: " + df.format(velocidadeMedia));
+        System.out.println("Velocidade média: " + df.format(velocidadeMedia));
         System.out.println("Litros de gasolina gastos: " + df.format(gasolinaGasta));
 
     }
