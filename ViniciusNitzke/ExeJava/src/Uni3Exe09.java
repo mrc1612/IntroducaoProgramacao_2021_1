@@ -13,5 +13,7 @@ public class Uni3Exe09 {
         float volume = (float) (3.14 * (raio * raio) * altLata);
 
         System.out.print("O volume da lata é de: " + volume);
+        
+        Scanner.close();
     }
 }
