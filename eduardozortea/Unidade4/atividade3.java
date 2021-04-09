@@ -18,5 +18,7 @@ public class atividade3 {
         else{
             System.out.println("valores iguais");
         }
+
+        scanner.close();
     }
 }
