@@ -14,5 +14,7 @@ public class atividade5 {
         }else{
             System.out.println("Não");
         }
+
+        scanner.close();
     }
 }
