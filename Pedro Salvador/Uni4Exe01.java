@@ -5,26 +5,27 @@ public class App {
 
         Scanner ler = new Scanner(System.in);
 
-int n1, n2;
+        double horasTrabalhadas, valorPorHora, salario;
 
-System.out.println("Informe o número 1");
+        System.out.println("Informe o número de horas trabalhadas neste mês");
 
-n1 = ler.nextInt();
+        horasTrabalhadas = ler.nextDouble();
 
-System.out.println("Informe o número 2");
+        System.out.println("Informe o valor que você recebe por hora");
 
-n2 = ler.nextInt();
+        valorPorHora = ler.nextDouble();
 
-if (n1 > n2) {
+        if (horasTrabalhadas > 160 ) {
 
-System.out.println("O " + n1 + "é maior que " + n2);
+            salario = valorPorHora *1.5* horasTrabalhadas;
 
-} else {
+        }else{
 
-    System.out.println("O " + n2 + " é maior que " + n1);
+            salario =  valorPorHora * horasTrabalhadas;
 
-System.out.println("Entrada Incorreta.");
+        }
 
+        System.out.println("Seu salário é " + salario);
+        
+        }
     }
-}
-}
