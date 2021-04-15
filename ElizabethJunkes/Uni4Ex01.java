@@ -9,7 +9,7 @@ public class Uni4Ex01 {
         System.out.print("Informe o valor do salário por hora: R$ ");
         salario_hora = teclado.nextDouble();
         salario_extra = 0;
-        if(horas_trabalhadas <= 160) {
+        if (horas_trabalhadas <= 160) {
             salario_normal = horas_trabalhadas * salario_hora;
         }
         else {
@@ -19,6 +19,6 @@ public class Uni4Ex01 {
             salario_extra = valor_hora_extra * qtd_hora_extra;
         }
         salario_total = salario_normal + salario_extra;
-        System.out.println("O salário total do funcionario acrescido com as horas extras foi de: R$ " + salario_total);;
+        System.out.println("O salário total do funcionário acrescido com as horas extras foi de: R$ " + salario_total);;
     }
 }
