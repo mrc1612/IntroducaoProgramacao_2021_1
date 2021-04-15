@@ -1,54 +1,54 @@
 package atividadesfurbifelse;
 
-import java.util.Scanner;
-
 public class atividade17 {
 
-    public static void main(String[] args) {
-        
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Informe a sua renda liquida anual: ");
-
-        double rendaLiquida = sc.nextDouble();
-
-        System.out.println("Informe a quantidade de dependentes: ");
-
-        int dependentes = sc.nextInt();
-
-        if(rendaLiquida >0 && rendaLiquida <=2000){
-
-            System.out.println("Não paga imposto");
-
-        } else if(rendaLiquida >2000 && rendaLiquida <=5000){
-
-            if(dependentes >0){
-
-              double  porcentagem = 0.02;
-
-              double valorPorfilho = porcentagem * dependentes;
-
-              double valorDoDesconto = valorPorfilho - 0.05;
-
-              double calculo = rendaLiquida - (valorDoDesconto * rendaLiquida);
-
-                if(valorDoDesconto <0){
-
-                  System.out.println(rendaLiquida);
-
-                } else{
-
-                 
-
-                  System.out.println(calculo);
-
-                }
-              
-
-            }
-
-        }
-
+public static void main(String[] args) {
+        Main minha = new Main();
+        double salario = 2500.00;
+        int pessoa = 3;
+        System.out.println(minha.descontoTotal(salario, pessoa));
     }
     
-}
+    public double descontoTotal(double rendaAnual, int numeroDependentes){
+        if(numeroDependentes <= 0){
+            if(rendaAnual > 2000 && rendaAnual <= 5000){
+                rendaAnual -= (rendaAnual * 5) / 100;
+                return rendaAnual;
+            } else if(rendaAnual >= 5000 && rendaAnual <= 10000){
+                rendaAnual -= (rendaAnual * 10) / 100;
+                return rendaAnual;
+            } else if(rendaAnual >= 10000){
+                rendaAnual -= (rendaAnual * 15) / 100;
+                return rendaAnual;
+            }
+        } else {
+            if(rendaAnual >= 2000 && rendaAnual <= 5000){
+                if(descontoDependente(numeroDependentes) > 5){
+                    return rendaAnual;
+                } else {
+                    rendaAnual -= (rendaAnual * (5 - descontoDependente(numeroDependentes))) / 100;
+                    return rendaAnual;
+                }
+            } else if(rendaAnual >= 5000 && rendaAnual <= 10000){
+                if(descontoDependente(numeroDependentes) > 10){
+                    return rendaAnual;
+                } else {
+                    rendaAnual -= (rendaAnual * (10 - descontoDependente(numeroDependentes))) / 100;
+                    return rendaAnual;
+                }
+            } else if(rendaAnual >= 10000){
+                if(descontoDependente(numeroDependentes) > 15){
+                    return rendaAnual;
+                } else {
+                    rendaAnual -= (rendaAnual * (15 - descontoDependente(numeroDependentes))) / 100;
+                    return rendaAnual;
+                }
+            }
+        }
+        return rendaAnual;
+    }
+    
+    public int descontoDependente(int numeroDependentes){
+        int descontoPessoa = numeroDependentes * 2;
+        return descontoPessoa;
+    }
