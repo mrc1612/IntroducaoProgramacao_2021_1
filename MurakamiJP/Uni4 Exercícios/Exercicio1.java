@@ -12,7 +12,7 @@ public class Exercicio1 {
 
         double salario = 0;
 
-        if( horas_sem > 40){
+        if(horas_sem > 40){
             
             double ganhos_hora_extra = (horas_mes - 160) * ((ganhos_hora * 0.5) + ganhos_hora);
             salario = ganhos_hora * horas_mes + ganhos_hora_extra;
