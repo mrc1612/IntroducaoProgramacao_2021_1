@@ -12,8 +12,6 @@ public class Uni4Exe01 {
 
         if (HorasTrabalhadas > 160){
             double salario = 160 * ValorHora;
-
-
             double HorasExtras = HorasTrabalhadas - 160;
             double ValorHoraExtra = (HorasExtras * ValorHora) + (HorasExtras * ValorHora) * 0.5;
             System.out.println("Seu Salario é:" + (salario + ValorHoraExtra));

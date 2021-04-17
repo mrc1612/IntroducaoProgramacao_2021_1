@@ -8,9 +8,9 @@ public class Uni4Exe05 {
         boolean resposta = scanner.nextBoolean();
 
         if(resposta){
-            System.out.println("True");
+            System.out.println("Sim");
         } else {
-            System.out.println("False");
+            System.out.println("Não");
         }
 
 

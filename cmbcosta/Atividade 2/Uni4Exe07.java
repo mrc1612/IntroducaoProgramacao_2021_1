@@ -20,11 +20,11 @@ public class Uni4Exe07 {
             valorExtra = valorExtra / 20;
             double valorTotal = valorExtra * 0.45 + 0.45;
             System.out.println("Custo do celo: R$" + valorTotal);
-         }else{
-            System.out.println("Custo do celo: R$0,45");
          }
 
-        }
+        }else{
+            System.out.println("Custo do celo: R$0,45");
+         }
 
 
         scanner.close();
