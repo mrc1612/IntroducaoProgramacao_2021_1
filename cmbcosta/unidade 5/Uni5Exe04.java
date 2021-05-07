@@ -1,16 +1,10 @@
 public class Uni5Exe04 {
-
-
-   
-    
-    
     public static void main(String[] args) {
 
         double soma = 0;
         double numerador = 3;
 		double denominador = 2;
 		double apoio = 4;
-
 
         soma = 0;
         numerador = 3;
@@ -27,7 +21,6 @@ public class Uni5Exe04 {
         numerador += 2;
         soma += (numerador / denominador2);
         
-
         for (int count = 2; count < 20; count++) { //os próximos 18 numeros
             numerador += 2;
             denominador = (denominador2 - denominador1) + apoio;
