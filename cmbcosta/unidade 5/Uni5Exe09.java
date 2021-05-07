@@ -17,7 +17,7 @@ public class Uni5Exe09 {
       System.out.println("Informe a idade: ");
       alunoIdade = teclado.nextInt();
       if (alunoIdade == 18) {
-        // System.out.println("   " + alunoNome + " tem 18 anos.");
+        System.out.println("   " + alunoNome + " tem 18 anos.");
         alunoIdade18 = alunoIdade18 + alunoNome + "\n";
       }
       if (alunoIdade > 20) {
