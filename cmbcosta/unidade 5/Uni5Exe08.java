@@ -13,7 +13,7 @@ public static void main(String[] args) throws Exception {
 	int total = 0;
 	float media = 0;
 	int Maiorestotal = 0;
-	int coificiente = 0;
+	int coeficiente = 0;
 	int teste = 0;
 	int i;
 	for(i = 0; i < num; i++) {
@@ -28,8 +28,8 @@ public static void main(String[] args) throws Exception {
         menor = teste;
     }
 	Maiorestotal = total - menor;
-	coificiente = num - 1;
-	media = Maiorestotal / coificiente;
+	coeficiente = num - 1;
+	media = Maiorestotal / coeficiente;
     }
 	System.out.println("Média:" + media);
 	System.out.println("O menor Número é:" + menorNegativo * -1);
