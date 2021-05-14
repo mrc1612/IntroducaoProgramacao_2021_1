@@ -7,12 +7,11 @@ public static void main(String[] args) throws Exception {
 
 	System.out.println("Digite N");
 	int num = scanner.nextInt();
-	int maior = 0;
 	int menorNegativo = 1000000;
 	int menor = 1000000;
 	int total = 0;
 	float media = 0;
-	int Maiorestotal = 0;
+	int MaioresTotal = 0;
 	int coeficiente = 0;
 	int teste = 0;
 	int i;
@@ -27,9 +26,9 @@ public static void main(String[] args) throws Exception {
 	if(teste <= menor){
         menor = teste;
     }
-	Maiorestotal = total - menor;
+	MaioresTotal = total - menor;
 	coeficiente = num - 1;
-	media = Maiorestotal / coeficiente;
+	media = MaioresTotal / coeficiente;
     }
 	System.out.println("Média:" + media);
 	System.out.println("O menor Número é:" + menorNegativo * -1);
