@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Uni5Exe12 {
+public class Uni5Ex12 {
     public static void main(String[] args) throws Exception {
         Scanner ler = new Scanner(System.in);
         System.out.print("Informe a quantidade de linhas: ");
