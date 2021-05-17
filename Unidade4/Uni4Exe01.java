@@ -4,20 +4,21 @@ public class Uni4Exe01 {
     public static void main(String[] args) throws Exception {
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("Digite as horas trabalhadas no mês: ");
-        float horasMes = teclado.nextFloat();
+        double horas_trab, valor_hora, salario;
 
-        System.out.println("Digite o valor/hora: ");
-        float valorHora = teclado.nextFloat();
+        System.out.println("Quantidade de horas trabalhadas mês:");
+        horas_trab = teclado.nextDouble();
 
-        if (horasMes > 160){
-            float calc = horasMes - 160;
+        System.out.println("Valor da hora:");
+        valor_hora = teclado.nextDouble();
 
-            float horaExtra = (float) ((float) calc * (valorHora + (valorHora / 2)));
-            
-            float salario = ((160 * valorHora) + horaExtra);
+        if (horas_trab > 160) {
+           salario = valor_hora * 1.5 * horas_trab;
 
-            System.out.println("O salario é de: " + salario);
-        };
+        } else{
+            salario = valor_hora * horas_trab;
+        }
+
+        System.out.println("O salario e de: R$ " + salario + "");  
     }
 }
