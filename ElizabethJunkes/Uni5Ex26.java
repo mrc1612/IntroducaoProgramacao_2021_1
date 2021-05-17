@@ -4,7 +4,7 @@ public class Uni5Ex26 {
         Scanner teclado = new Scanner(System.in);
         int i = 1;
         int trecho = 0;
-        int trecho2 = 0; 
+        int trecho_2 = 0; 
         int c = 0;
         int pedagio = 1;
         int distancia;
@@ -20,14 +20,14 @@ public class Uni5Ex26 {
           distancia = teclado.nextInt();
           i++;
           c = i -1;
-          if (pedagio >= negaPagar){
+          if (pedagio >= negaPagar) {
               trecho ++;
-          } else if (distancia >= 150 && pedagio <= negaPagar){
-          trecho2++;
+          } else if (distancia >= 150 && pedagio <= negaPagar) {
+          trecho_2++;
           } 
         }
         System.out.println("Há " + trecho + " trechos com valor acima.");
         System.out.println( "Ele parou em " + c + " trechos.");
-        System.out.println("Há " + trecho2 + " trechos acima de 150 km com valores aceitáveis pelo homem.");
+        System.out.println("Há " + trecho_2 + " trechos acima de 150 km com valores aceitáveis pelo homem.");
     }
 }
