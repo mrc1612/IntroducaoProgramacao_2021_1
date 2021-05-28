@@ -5,11 +5,11 @@ public class Uni6Exe01 {
     public Uni6Exe01() {
         int[] array = new int[10];
 
-        readyValueArray(array);
+        readValueArray(array);
         writeArray(array);
     }
 
-    public void readyValueArray(int[] array) {
+    public void readValueArray(int[] array) {
         Scanner scanner = new Scanner(System.in);
 
         for (int index = 0; index < array.length; index++) {
