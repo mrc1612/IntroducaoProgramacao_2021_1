@@ -6,14 +6,14 @@ public class Uni6Exe04 {
         int[] array = new int[10];
         int[] array1 = new int[10];
         int[] arraySum = new int[10];
-        readyValueArray(array, array1);
+        readValueArray(array, array1);
         sumArray(array, array1, arraySum);
         writeArray(array, array1, arraySum, 0);
 
     }
 
     // READY
-    public void readyValueArray(int[] array, int[] array1) {
+    public void readValueArray(int[] array, int[] array1) {
         Scanner scanner = new Scanner(System.in);
         for (int index = 0; index < array.length; index++) {
             System.out.print("Digite os valores do Array 1: ");
