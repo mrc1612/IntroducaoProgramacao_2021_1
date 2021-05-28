@@ -7,13 +7,13 @@ public class Uni6Exe05 {
         String[] array = new String[5];
         String[] array1 = new String[5];
         String[] perguntas = new String[5];
-        readyValueArray(array, array1, perguntas);
+        readValueArray(array, array1, perguntas);
         pontos = sumArray(array, array1, perguntas);
         writeArray(pontos);
 
     }
     // READY
-    public void readyValueArray(String[] array, String[] array1, String[] perguntas) {
+    public void readValueArray(String[] array, String[] array1, String[] perguntas) {
         System.out.println("Responda só com sim, não ou ind (indiferente)!");
         Scanner scanner = new Scanner(System.in);
         
