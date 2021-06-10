@@ -9,7 +9,7 @@ public class Uni6Exe01 {
         writeArray(array);
     }
 
-    public void readValueArray(int[] array) {
+    public void readyValueArray(int[] array) {
         Scanner scanner = new Scanner(System.in);
 
         for (int index = 0; index < array.length; index++) {
