@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class Uni6Exe6 {
+public class atividade6 {
      public static void main(String[] args) {
-        new Uni6Exe6();
+        new atividade6();
     }
   
-    public Uni6Exe6() {
+    public atividade6() {
 
         Scanner scanner = new Scanner(System.in);
 
