@@ -13,7 +13,7 @@ public class Uni6Exe02 {
         higherValues(vectorNumb, average);
     }
 
-    public float ReadValue(float vectorNumb[]) {
+    public float ReadyValue(float vectorNumb[]) {
         float sum = 0;
         Scanner scanner = new Scanner(System.in);
 
