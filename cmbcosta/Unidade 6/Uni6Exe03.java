@@ -5,13 +5,13 @@ public class Uni6Exe03 {
     public Uni6Exe03() {
         float[] array = new float[12];
 
-        readValueArray(array);
+        readyValueArray(array);
         oddPair(array);
         writeArray(array, 0);
     }
 
     // READY
-    public void readValueArray(float[] array) {
+    public void readyValueArray(float[] array) {
         Scanner scanner = new Scanner(System.in);
 
         for (int index = 0; index < array.length; index++) {
