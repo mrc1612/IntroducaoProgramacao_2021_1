@@ -5,7 +5,7 @@ public class Uni6Exe01 {
     public Uni6Exe01() {
         int[] array = new int[10];
 
-        readValueArray(array);
+        readyValueArray(array);
         writeArray(array);
     }
 
