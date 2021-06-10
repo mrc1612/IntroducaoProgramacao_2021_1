@@ -25,12 +25,12 @@ public class Uni6Exe07
             }
         }
         float[] array = new float[numero];
-        readValues(array, numero);
+        readyValues(array, numero);
         scanner.close();
     }
 
 
-    public void readValues(float[] array, int vetorSize)
+    public void readyValues(float[] array, int vetorSize)
     {   
         ArrayList<Integer> arrayList = new ArrayList<Integer>();
         Scanner scanner = new Scanner(System.in);
