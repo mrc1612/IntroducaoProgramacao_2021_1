@@ -14,11 +14,11 @@ public class Uni6Exe06
         int numero = scanner.nextInt();
         double[] array = new double[numero];
         System.out.println("Vetor com " + numero + " posicoes foi criado");
-        ReadValues(array, numero);
+        ReadyValues(array, numero);
         scanner.close();
     }
 
-    public void ReadValues(double[] array, int numero)
+    public void ReadyValues(double[] array, int numero)
     {
        Scanner scanner = new Scanner(System.in);
         for(int i=0; i<array.length; i++)
